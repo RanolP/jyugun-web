@@ -17,6 +17,12 @@
             text-align: center;
         }
 
+        @media screen and (max-width: 1000px) {
+            body {
+                font-size: 1rem;
+            }
+        }
+
         table {
             margin: 0 auto;
             border-spacing: 0 1rem;
@@ -28,11 +34,6 @@
 
         td {
             font-weight: 500;
-        }
-
-        td>p {
-            margin: 0 auto;
-            max-width: 50vw;
         }
 
         small {
@@ -51,7 +52,8 @@
             font-size: inherit;
         }
 
-        input[type=radio] {
+        input[type=radio],
+        input[type=checkbox] {
             width: 1em;
             height: 1em;
         }
@@ -81,6 +83,13 @@
             <input id="right" type="radio" name="alignment" value="right" />
         </div>
         <button>적용</button>
+    </form>
+    <form id="alignForm">
+        <h3>각색본만 보기</h3>
+        <div>
+            <label for="onlyChanged">적용</label>
+            <input id="onlyChanged" type="checkbox" />
+        </div>
     </form>
 
     <table>
@@ -446,9 +455,11 @@
 
 
 <script>
+    const form = document.getElementById('alignForm');
+
     function submit(e) {
-        e.preventDefault();
-        const data = Object.fromEntries(new FormData(e.target));
+        e && e.preventDefault();
+        const data = Object.fromEntries(new FormData(form));
 
         switch (data.alignment) {
             case 'left': {
@@ -481,7 +492,29 @@
         }
     }
 
-    document.getElementById('alignForm').addEventListener('submit', submit);
+    form.addEventListener('submit', submit);
+
+    function showOnlyChanged(e) {
+        if (e.target.checked) {
+            const trList = Array.from(document.getElementsByTagName('tr'));
+            for (const [left, right] of trList.map(tr => Array.from(tr.childNodes).filter(thtd => thtd.tagName === 'TH' || thtd.tagName === 'TD'))) {
+                if (left.innerText.length === 0) {
+                    left.classList.add('hidden');
+                } else {
+                    right.classList.add('hidden');
+                }
+                right.colSpan = 1;
+            }
+        } else {
+            const trList = Array.from(document.getElementsByTagName('tr'));
+            for (const [left, right] of trList.map(tr => Array.from(tr.childNodes).filter(thtd => thtd.tagName === 'TH' || thtd.tagName === 'TD'))) {
+                right.classList.remove('hidden');
+            }
+            submit();
+        }
+    }
+
+    document.getElementById('onlyChanged').addEventListener('input', showOnlyChanged);
 </script>
 
 </html>
