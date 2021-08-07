@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쥬 군이 말하는 건 옛날부터 무엇 하나도, 요만큼도 모르겠다고!</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <style>
+        body {
+            font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+            font-size: 2rem;
+            word-break: keep-all;
+            hyphens: none;
+            text-align: center;
+        }
+
+        table {
+            margin: 0 auto;
+            border-spacing: 0 1rem;
+        }
+
+        th {
+            font-weight: 700;
+        }
+
+        td {
+            font-weight: 500;
+        }
+
+        td>p {
+            margin: 0 auto;
+            max-width: 50vw;
+        }
+
+        small {
+            display: block;
+            height: 3em;
+            opacity: 0.5;
+            font-weight: 300;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        input,
+        button {
+            font-size: inherit;
+        }
+
+        input[type=radio] {
+            width: 1em;
+            height: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        쥬 군이 말하는 건 옛날부터 무엇 하나도, 요만큼도 모르겠다고!
+    </h1>
+    <p>
+        전설의 장면을 프로그래밍 용어로 바꿔봅니다
+    </p>
+
+    <form id="alignForm">
+        <h3>공용 대사 정렬</h3>
+        <div>
+            <label for="left">좌측</label>
+            <input id="left" type="radio" name="alignment" value="left" />
+        </div>
+        <div>
+            <label for="center">중간</label>
+            <input id="center" type="radio" name="alignment" value="center" checked />
+        </div>
+        <div>
+            <label for="right">우측</label>
+            <input id="right" type="radio" name="alignment" value="right" />
+        </div>
+        <button>적용</button>
+    </form>
+
+    <table>
+        <tr>
+            <th>
+                각색본
+            </th>
+            <th>
+                원본
+            </th>
+        </tr>
+        <tr>
+            <td class="left hidden"></td>
+            <td class="right" colspan="2">
+                <p>
+                    모르겠어...&nbsp;모르겠다고! <br />
+                    쥬&nbsp;군이&nbsp;말하는&nbsp;건
+                    하나도&nbsp;모르겠어! <br />
+                    쥬&nbsp;군이&nbsp;좋다고
+                    말하는&nbsp;게 <br />
+                    대체&nbsp;뭐가
+                    좋은&nbsp;건지&nbsp;모르겠어! <br />
+                    모르겠어,
+                    전혀&nbsp;모르겠다고!
+                </p>
+                <small></small>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    『Radium』&#xFEFF;이&nbsp;뭐가&nbsp;멋있어? <br />
+                    방사능같은&nbsp;건&nbsp;싫어. <br />
+                    아프기만&nbsp;할&nbsp;뿐이라고.
+                </p>
+                <small>
+                    <a href="https://github.com/formidablelabs/radium">radium</a>이라는 이름의 CSS-in-JS 라이브러리가 있다.
+                </small>
+            </td>
+            <td>
+                <p>
+                    『Bloody』&#xFEFF;가&nbsp;뭐가&nbsp;멋있어? <br />
+                    피같은&nbsp;건&nbsp;싫어, <br />
+                    아프기만&nbsp;할&nbsp;뿐이라고.
+                </p>
+                <small></small>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    『유령』&#xFEFF;은&nbsp;어디가&nbsp;멋있는데? <br />
+                    Spectre의&nbsp;어디가&nbsp;좋은지
+                    전혀&nbsp;모르겠어!
+                </p>
+                <small>
+                    <a href="https://picturepan2.github.io/spectre/">Spectre</a>라는 이름의 CSS Framework가 있다.
+                </small>
+            </td>
+            <td>
+                <p>
+                    『광기』&#xFEFF;는&nbsp;어디가&nbsp;멋있는데? <br />
+                    Crazy의&nbsp;어디가&nbsp;좋은지
+                    전혀&nbsp;모르겠어!
+                </p>
+                <small></small>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    『가상&nbsp;DOM』&#xFEFF;이라는&nbsp;건&nbsp;뭐야? <br />
+                    가상이라는&nbsp;게 뭐가&nbsp;좋다는&nbsp;거야? <br />
+                    가짜가&nbsp;멋진&nbsp;거야?
+                </p>
+                <small>가상 DOM은 실제 DOM 접근이 느리기 때문에 사용하는 중간 계층이다.</small>
+            </td>
+            <td>
+                <p>
+                    『죄가&nbsp;깊다』&#xFEFF;는&nbsp;건&nbsp;뭐야? <br />
+                    죄가&nbsp;있다는&nbsp;게 뭐가&nbsp;좋다는&nbsp;거야? <br />
+                    범죄자가&nbsp;멋진&nbsp;거야?
+                </p>
+                <small></small>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    애초에&nbsp;『마천루』&#xFEFF;는&nbsp;뭐야? <br />
+                    Babel?&nbsp;그래서&nbsp;어쩌라고?!
+                </p>
+                <small><a href="https://babeljs.io/">babel</a>은 신식 JS 문법을 구식으로 변환하는 도구다.</small>
+            </td>
+            <td>
+                <p>
+                    애초에&nbsp;『혼돈』&#xFEFF;은&nbsp;뭐야? <br />
+                    Chaos?&nbsp;그래서&nbsp;어쩌라고?!
+                </p>
+                <small></small>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    『어둠』&#xFEFF;은&nbsp;뭔데? <br />
+                    화면이&nbsp;어두우면&nbsp;되는&nbsp;거야?
+                </p>
+                <small>많은 개발자들이 다크 테마를 선호한다.</small>
+            </td>
+            <td>
+                <p>
+                    『어둠』&#xFEFF;은&nbsp;뭔데? <br />
+                    어두우면&nbsp;되는&nbsp;거야?
+                </p>
+                <small></small>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    『정의』&#xFEFF;랑&nbsp;『감』&#xFEFF;이라면,
+                    왜&nbsp;『감』&#xFEFF;인&nbsp;쪽이&nbsp;좋은&nbsp;건데? <br />
+                    왜&nbsp;정의&nbsp;무시가&nbsp;좋은&nbsp;건데?
+                    틀리니까&nbsp;감인&nbsp;거&nbsp;아니야?
+                </p>
+                <small>JavaScript에는 타입 정의가 없다.</small>
+            </td>
+            <td>
+                <p>
+                    『정의』&#xFEFF;랑&nbsp;『악』&#xFEFF;이라면,
+                    왜&nbsp;『악』&#xFEFF;인&nbsp;쪽이&nbsp;좋은&nbsp;건데? <br />
+                    왜&nbsp;나쁜&nbsp;쪽이&nbsp;좋은&nbsp;건데?
+                    나쁘니까&nbsp;악인&nbsp;거&nbsp;아니야?
+                </p>
+                <small></small>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    백엔드가&nbsp;날뛰면&nbsp;왜&nbsp;멋진&nbsp;거야? <br />
+                    자신의&nbsp;AWS를&nbsp;제어&nbsp;못하는
+                    느낌이&nbsp;참을&nbsp;수&nbsp;없다,&nbsp;라. <br />
+                    뭐야&nbsp;그거&nbsp;그냥&nbsp;머저리잖아!
+                    제대로&nbsp;제어할&nbsp;수&nbsp;있는&nbsp;게&nbsp;멋있다고!
+                    훌륭하다고!
+                </p>
+                <small>AWS가 터지고 AWS 사용자들이 손가락만 쪽쪽 빨던 사건</small>
+            </td>
+            <td>
+                <p>
+                    오른팔이&nbsp;날뛰면&nbsp;왜&nbsp;멋진&nbsp;거야? <br />
+                    자신의&nbsp;힘을&nbsp;제어&nbsp;못하는
+                    느낌이&nbsp;참을&nbsp;수&nbsp;없다,&nbsp;라. <br />
+                    뭐야&nbsp;그거&nbsp;그냥&nbsp;머저리잖아!
+                    제대로&nbsp;제어할&nbsp;수&nbsp;있는&nbsp;게&nbsp;멋있다고!
+                    훌륭하다고!
+                </p>
+                <small></small>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    평소에&nbsp;Bundler를&nbsp;숨기고
+                    있으면&nbsp;뭐가&nbsp;대단한데?
+                    그런&nbsp;건&nbsp;그냥&nbsp;대충인&nbsp;거지! <br />
+                    숨기지&nbsp;않고&nbsp;전력으로
+                    몰두하는&nbsp;게&nbsp;훨씬&nbsp;멋있어.
+                    <small>요새 Bundling이 느리다고 개발 중에는 번들 없는 툴체인이 유행하고 있다.</small>
+                </p>
+            </td>
+            <td>
+                <p>
+                    평소에&nbsp;강한 힘을&nbsp;숨기고
+                    있으면&nbsp;뭐가&nbsp;대단한데?
+                    그런&nbsp;건&nbsp;그냥&nbsp;대충인&nbsp;거지! <br />
+                    숨기지&nbsp;않고&nbsp;전력으로
+                    몰두하는&nbsp;게&nbsp;훨씬&nbsp;멋있어.
+                </p>
+                <small></small>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    어째서 『alias』&#xFEFF;라든가 『re-export』&#xFEFF;라든가 이것저것&nbsp;붙이는&nbsp;거야? <br />
+                    부를&nbsp;이름이&nbsp;많아봤자 알기&nbsp;어려울&nbsp;뿐이잖아!
+                </p>
+                <small>
+                    단순한 alias로는 <code>chalk.gray</code>랑 <code>chalk.grey</code>라든지, <br />
+                    re-export는 tree-shaking 때문에 줄어들긴 했...나?
+                </small>
+            </td>
+            <td>
+                <p>
+                    어째서 『이명』&#xFEFF;이라든가 『별호』&#xFEFF;라든가 이것저것&nbsp;붙이는&nbsp;거야? <br />
+                    부를&nbsp;이름이&nbsp;많아봤자 알기&nbsp;어려울&nbsp;뿐이잖아!
+                </p>
+                <small></small>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    영어&nbsp;길다고&nbsp;무턱대고 숫자&nbsp;붙이지&nbsp;마, <br />
+                    외우기&nbsp;힘들잖아! <br />
+                    <br />
+                    『i18n』&#xFEFF;이라&nbsp;쓰고 『국제화』&#xFEFF;라고&nbsp;읽지&nbsp;마! <br />
+                    『a11y』&#xFEFF;라고&nbsp;쓰고 『접근성』&#xFEFF;이라&nbsp;읽지&nbsp;마! <br />
+                    『m12n』&#xFEFF;이라&nbsp;쓰고 『모듈화』&#xFEFF;라고&nbsp;읽지&nbsp;마!
+                </p>
+                <small>Numeronym이라고 부른다.</small>
+            </td>
+            <td>
+                <p>
+                    영어라고&nbsp;무턱대고 가타카나&nbsp;붙이지&nbsp;마, <br />
+                    외우기&nbsp;힘들잖아! <br />
+                    <br />
+                    『진혼가』&#xFEFF;라&nbsp;쓰고 『Requiem』&#xFEFF;이라&nbsp;읽지&nbsp;마! <br />
+                    『금기』&#xFEFF;라고&nbsp;쓰고 『Taboo』&#xFEFF;라고&nbsp;읽지&nbsp;마! <br />
+                    『성전』&#xFEFF;이라&nbsp;쓰고 『Jihard』&#xFEFF;라고&nbsp;읽지&nbsp;마!
+                </p>
+                <small></small>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    『Micro&nbsp;Service』&#xFEFF;든 『기계 학습』&#xFEFF;이든 『Micro&nbsp;Frontend』&#xFEFF;든
+                    『Coverage&nbsp;100%』&#xFEFF;든, <br />
+                    약간&nbsp;알아본&nbsp;주제에 그런&nbsp;이야기&nbsp;하지&nbsp;마. <br />
+                    내용도&nbsp;제대로&nbsp;알려주지&nbsp;않아서 의미를&nbsp;알&nbsp;수&nbsp;없다고, <br />
+                    가르쳐줄&nbsp;거면 제대로&nbsp;가르쳐달란&nbsp;말이야!
+                </p>
+                <small>꽤나 신화적 개념이지 않나요?</small>
+            </td>
+            <td>
+                <p>
+                    『그리스&nbsp;신화』&#xFEFF;든 『성서』&#xFEFF;든 『북구&nbsp;신화』&#xFEFF;든 『일본&nbsp;신화』&#xFEFF;든, <br />
+                    약간&nbsp;알아본&nbsp;주제에 그런&nbsp;이야기&nbsp;하지&nbsp;마. <br />
+                    내용도&nbsp;제대로&nbsp;알려주지&nbsp;않아서 의미를&nbsp;알&nbsp;수&nbsp;없다고, <br />
+                    가르쳐줄&nbsp;거면 제대로&nbsp;가르쳐달란&nbsp;말이야!
+                </p>
+                <small></small>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    함수형인&nbsp;고급&nbsp;언어&nbsp;같은&nbsp;거 설명해봤자&nbsp;재미&nbsp;같은&nbsp;건&nbsp;없어. <br />
+                    『Scala』&#xFEFF;도, 『Haskell』&#xFEFF;도, 『Standard ML』&#xFEFF;도, 『ReScript』&#xFEFF;도, <br />
+                    『Common Lisp and its variants』&#xFEFF;도 의미불명이라고, <br />
+                    뭐가&nbsp;멋진&nbsp;건지 전!&nbsp;혀!&nbsp;모르겠어!
+                </p>
+                <small>FP는 좀 신화적 무기죠, 요즘은 덜하지만.</small>
+            </td>
+            <td>
+                <p>
+                    신화에서&nbsp;나오는&nbsp;무기&nbsp;같은&nbsp;거 설명해봤자&nbsp;재미&nbsp;같은&nbsp;건&nbsp;없어. <br />
+                    『궁니르』&#xFEFF;도, 『롱기누스』&#xFEFF;도, 『엑스칼리버』&#xFEFF;도, 『듀랜달』&#xFEFF;도, <br />
+                    『아마노무라쿠모노츠루기』&#xFEFF;도 의미불명이라고, <br />
+                    뭐가&nbsp;멋진&nbsp;건지 전!&nbsp;혀!&nbsp;모르겠어!
+                </p>
+                <small></small>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    다른&nbsp;용어도&nbsp;수수께끼야. <br />
+                    『XHR』&#xFEFF;이니 『JSX』&#xFEFF;니 『GQL』&#xFEFF;이니 『WASM』&#xFEFF;이니 『left-pad』&#xFEFF;니, <br />
+                    “이름이&nbsp;좋잖아”&#xFEFF;라니&nbsp;무슨&nbsp;소리야? <br />
+                    “분위기로&nbsp;느껴봐”&#xFEFF;라고&nbsp;해도&nbsp;불가능하다고!
+                </p>
+                <small>괴상한 약어와 전설의 패키지</small>
+            </td>
+            <td>
+                <p>
+                    다른&nbsp;용어도&nbsp;수수께끼야. <br />
+                    『원죄』&#xFEFF;니 『십계』&#xFEFF;니 『창세기』&#xFEFF;니 『묵시록』&#xFEFF;이니 『하르마게돈』&#xFEFF;이니, <br />
+                    “이름이&nbsp;좋잖아”&#xFEFF;라니&nbsp;무슨&nbsp;소리야? <br />
+                    “분위기로&nbsp;느껴봐”&#xFEFF;라고&nbsp;해도&nbsp;불가능하다고!
+                </p>
+                <small></small>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    『Render&nbsp;as&nbsp;You&nbsp;Fetch』&#xFEFF;나 『하이젠버그』&#xFEFF;나 『VDOM&nbsp;Diffing』&#xFEFF;이나, <br />
+                    조금&nbsp;인터넷으로 찾아본&nbsp;거&nbsp;갖고 아는&nbsp;척&nbsp;하지&nbsp;좀&nbsp;마, <br />
+                    어중간하게&nbsp;설명해봤자 눈곱만큼도&nbsp;모르겠단&nbsp;말이야!
+                </p>
+                <small></small>
+            </td>
+            <td>
+                <p>
+                    『상대성&nbsp;이론』&#xFEFF;이나 『슈뢰딩거의&nbsp;고양이』&#xFEFF;나 『만유인력』&#xFEFF;이나, <br />
+                    조금&nbsp;인터넷으로 찾아본&nbsp;거&nbsp;갖고 아는&nbsp;척&nbsp;하지&nbsp;좀&nbsp;마, <br />
+                    어중간하게&nbsp;설명해봤자 눈곱만큼도&nbsp;모르겠단&nbsp;말이야!
+                </p>
+                <small></small>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    〈Dan&nbsp;Abramov〉&#xFEFF;나&nbsp;〈Evan&nbsp;You〉&#xFEFF;가 한&nbsp;말을&nbsp;좋을대로&nbsp;인용&nbsp;하지마!
+                </p>
+                <small>두 사람은 각각 React, Vue의 핵심 기여자다.</small>
+            </td>
+            <td>
+                <p>
+                    〈니체〉&#xFEFF;나&nbsp;〈괴테〉&#xFEFF;가 한&nbsp;말을&nbsp;좋을대로&nbsp;인용&nbsp;하지마!
+                </p>
+                <small></small>
+            </td>
+        </tr>
+        <tr>
+            <td class="left hidden"></td>
+            <td class="right" colspan="2">
+                <p>
+                    모르는&nbsp;사람이 했던&nbsp;말을 써봤자, <br />
+                    무슨&nbsp;말을 하고&nbsp;싶은&nbsp;건지 전혀 모르겠단&nbsp;말야. <br />
+                    자신의&nbsp;말로 얘기해줘, <br />
+                    부탁이니까 내가&nbsp;아는&nbsp;말로 얘기해줘!
+                </p>
+                <small></small>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    웹개발이&nbsp;뭐야? <br />
+                    웹개발이&nbsp;대체 뭐&nbsp;하는&nbsp;건데?
+                </p>
+                <small></small>
+            </td>
+            <td>
+                <p>
+                    중2병이&nbsp;뭐야? <br />
+                    중2병이&nbsp;대체 뭐&nbsp;하는&nbsp;건데?
+                </p>
+                <small></small>
+            </td>
+        </tr>
+        <tr>
+            <td class="left hidden"></td>
+            <td class="right" colspan="2">
+                <p>
+                    모르겠어, 모르겠어,&nbsp;모르겠어, 모르겠어,&nbsp;모르겠어! <br />
+                    쥬&nbsp;군이 말하는&nbsp;건 옛날부터
+                    무엇&nbsp;하나도, <br />
+                    요만큼도 모르겠다고!
+                </p>
+                <small></small>
+            </td>
+        </tr>
+    </table>
+</body>
+
+
+<script>
+    function submit(e) {
+        e.preventDefault();
+        const data = Object.fromEntries(new FormData(e.target));
+
+        switch (data.alignment) {
+            case 'left': {
+                for (const left of document.getElementsByClassName('left')) {
+                    left.classList.add('hidden');
+                }
+                for (const right of document.getElementsByClassName('right')) {
+                    right.colSpan = 1;
+                }
+                break;
+            }
+            case 'center': {
+                for (const left of document.getElementsByClassName('left')) {
+                    left.classList.add('hidden');
+                }
+                for (const right of document.getElementsByClassName('right')) {
+                    right.colSpan = 2;
+                }
+                break;
+            }
+            case 'right': {
+                for (const left of document.getElementsByClassName('left')) {
+                    left.classList.remove('hidden');
+                }
+                for (const right of document.getElementsByClassName('right')) {
+                    right.colSpan = 2;
+                }
+                break;
+            }
+        }
+    }
+
+    document.getElementById('alignForm').addEventListener('submit', submit);
+</script>
+
+</html>
